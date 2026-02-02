@@ -1,0 +1,21 @@
+<!-- 14. Change background color of a box on mouse enter and mouse leave. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="colorBox" style=" background-color: lightblue; border: 1px solid black;">Hiloo</div>
+    <script>
+        const colorBox = document.getElementById("colorBox");
+        colorBox.addEventListener("mouseenter", function() {
+            this.style.backgroundColor = "pink";
+        });
+        colorBox.addEventListener("mouseleave", function() {
+            this.style.backgroundColor = "lightblue";
+        });
+    </script>
+</body>
+</html>

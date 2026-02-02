@@ -1,0 +1,20 @@
+<!-- 12. Display text live as the user types in an input field. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="text" id="textInput" placeholder="Kuchh likhiye yaha pe">
+    <p id="output"></p>
+    <script>
+        const input = document.getElementById("textInput");
+        const output = document.getElementById("output");
+        input.addEventListener("input", function() {
+            output.textContent = input.value;
+        });
+    </script>
+ </body>
+ </html>

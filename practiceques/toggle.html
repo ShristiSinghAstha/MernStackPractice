@@ -1,0 +1,22 @@
+<!-- 7. Create a button that toggles between Light Mode and Dark Mode. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="toggleButton">Toggle Mode</button>
+    <script>
+        const button = document.getElementById("toggleButton");
+        let isDarkMode = false;
+
+        button.addEventListener("click", function() {
+            isDarkMode = !isDarkMode;
+            document.body.style.backgroundColor = isDarkMode ? "pink" : "rgb(78, 176, 237)";
+            document.body.style.color = isDarkMode ? "rgb(78, 176, 237)" : "pink";
+        });
+    </script>
+</body>
+</html>

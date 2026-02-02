@@ -1,0 +1,19 @@
+<!-- Q. Change paragraph text on click -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Change</title>
+</head>
+<body>
+
+  <p>Click this text</p>
+
+  <script>
+    document.querySelector("p").addEventListener("click", function () {
+      this.innerText = "Text changed";
+    });
+  </script>
+
+</body>
+</html>

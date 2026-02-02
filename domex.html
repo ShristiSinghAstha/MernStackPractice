@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    .button-container {
+      margin: 30px 0;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    #btn1 { background-color: #ff6666; color: white; }
+    #btn2 { background-color: #66b3ff; color: white; }
+    #btn3 { background-color: #66ff66; color: white; }
+
+    #content {
+      background-color: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+<script src="Class/constr4.js"></script>
+  <h1>NiSan</h1>
+  <p>Click the buttons below to acccess the details.</p>
+
+  <div class="button-container">
+    <button id="btn1">Button1</button>
+    <button id="btn2">Button2</button>
+    <button id="btn3">Button3</button>
+  </div>
+
+  <div id="content">
+    <h2>Welcome!</h2>
+    <p>Hello People! Welcome to our Website.</p>
+  </div>
+
+  <script>
+    // Example JS for DOM operations (optional)
+    // const content = document.getElementById("content");
+    // document.getElementById("btn1").addEventListener("click", () => {
+    //   content.querySelector("p").innerText = "Text changed using DOM!";
+    // });
+    // document.getElementById("btn2").addEventListener("click", () => {
+    //   content.style.backgroundColor = "#ffe066";
+    // });
+    // document.getElementById("btn3").addEventListener("click", () => {
+    //   content.style.display = "none";
+    // });
+  </script>
+
+</body>
+</html>

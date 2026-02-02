@@ -1,0 +1,22 @@
+<!-- 13. Disable a submit button until terms checkbox is selected. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="checkbox" id="termsCheckbox">
+    <label for="termsCheckbox">Mujhe aapki sari shartein manzoor hai!</label>
+    <br><br>
+    <button id="submitButton" disabled>Submit</button>
+    <script>
+        const checkbox = document.getElementById("termsCheckbox");
+        const submitButton = document.getElementById("submitButton");
+        checkbox.addEventListener("change", function() {
+            submitButton.disabled = !this.checked;
+        });
+    </script>
+ </body>
+ </html>

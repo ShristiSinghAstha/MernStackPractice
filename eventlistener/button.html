@@ -1,0 +1,22 @@
+<!-- 1. Create a button click counter that increases a number every time the button is clicked. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <button>Click</button>
+    <p>0</p>
+    <script>
+        let count=0;
+        const btn=document.querySelector("button");
+        const p=document.querySelector("p");
+        btn.addEventListener("click",()=>{
+            count++;
+            p.textContent=count;
+        })
+    </script>
+ </body>
+ </html>

@@ -1,0 +1,21 @@
+<!-- 4. Disable a submit button until a checkbox is checked. -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <input type="checkbox"/>
+    <button disabled>Submit</button>
+    <script>
+        const checkbox=document.querySelector("input[type='checkbox']");
+        const btn=document.querySelector("button");
+        checkbox.addEventListener("change",()=>{
+        btn.disabled = !checkbox.checked;
+        })
+    </script>
+ </body>
+ </html>
+ 
